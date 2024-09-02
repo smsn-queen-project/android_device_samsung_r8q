@@ -21,7 +21,7 @@ vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 
 # Audio
-vendor/lib/hw/audio.primary.kona.so
+vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.r8q.so
 vendor/lib/lib_SamsungRec_07020.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/librecordalive.so
