@@ -36,7 +36,5 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="r8qxx-user 11 RP1A.200720.012 G780GXXSCEXI1 release-keys" \
-
-# Vendor fingerprint
-BUILD_FINGERPRINT := "samsung/r8qxx/r8q:11/RP1A.200720.012/G780GXXSCEXI1:user/release-keys"
+    BuildDesc="r8qxx-user 11 RP1A.200720.012 G780GXXSCEXI1 release-keys" \
+    BuildFingerprint="samsung/r8qxx/r8q:11/RP1A.200720.012/G780GXXSCEXI1:user/release-keys"
