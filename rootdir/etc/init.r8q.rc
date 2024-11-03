@@ -163,6 +163,23 @@ on init
     chmod 0644 /dev/freezer/abnormal/cgroup.procs
     chmod 0644 /dev/freezer/abnormal/freezer.state
 
+# Variant specific properties
+on property:ro.boot.em.model=SM-G781B
+    setprop bluetooth.device.default_name "Galaxy S20 FE 5G"
+    setprop ro.telephony.default_network "33,33"
+
+on property:ro.boot.em.model=SM-G781N
+    setprop bluetooth.device.default_name "Galaxy S20 FE 5G"
+    setprop ro.telephony.default_network "33,33"
+
+on property:ro.boot.em.model=SM-G781B0
+    setprop bluetooth.device.default_name "Galaxy S20 FE 5G"
+    setprop ro.telephony.default_network "33,33"
+
+on property:ro.boot.em.model=SM-G780G
+    setprop bluetooth.device.default_name "Galaxy S20 FE"
+    setprop ro.telephony.default_network "9,9"
+
 on boot
 # SSWAP
     write /proc/sys/vm/swappiness 160
