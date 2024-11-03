@@ -7,14 +7,14 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libsample1.so)
+        vendor/lib64/hw/com.qti.chi.override.so)
             [ "$2" = "" ] && return 0
-            sed -i 's|/data/misc/sample1|/data/misc/sample2|g' "${2}"
-            ;;
-        vendor/lib64/libsample2.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --remove-needed "libsample3.so" "${2}"
-            "${PATCHELF}" --add-needed "libsample4.so" "${2}"
+            xxd -p "${2}" | tr -d \\n > "${2}".hex
+            # NOP CONNECT_RILD
+            sed -i "s/a00640f96d66009480010034a2eaffd043ecff9065ebfff0e603002a/1f2003d51f2003d51f2003d51f2003d51f2003d51f2003d51f2003d5/g" "${2}".hex
+            sed -i "s/42503d91633c1391a5743191e40e8052e0031f2a2100805265d8ff97a00640f9/1f2003d51f2003d51f2003d51f2003d51f2003d51f2003d51f2003d5a00640f9/g" "${2}".hex
+            xxd -r -p "${2}".hex > "${2}"
+            rm "${2}".hex
             ;;
         *)
             return 1
