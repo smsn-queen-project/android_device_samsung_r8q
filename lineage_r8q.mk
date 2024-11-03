@@ -13,6 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Wifi
+TARGET_HAS_QCACLD_WIFI := true
+
 # Inherit device configuration
 $(call inherit-product, device/samsung/r8q/device.mk)
 
