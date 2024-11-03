@@ -11,6 +11,10 @@ $(call inherit-product, device/samsung/sm8250-common/common.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Init files
+PRODUCT_PACKAGES += \
+    init.r8q.rc
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
