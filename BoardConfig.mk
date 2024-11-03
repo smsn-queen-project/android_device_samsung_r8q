@@ -10,6 +10,7 @@ DEVICE_PATH := device/samsung/r8q
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/samsung/r8q.config
+BOARD_NAME := SRPUB26A007
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := r8q
