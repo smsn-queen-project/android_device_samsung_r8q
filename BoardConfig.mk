@@ -8,6 +8,10 @@ include device/samsung/sm8250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/r8q
 
+# Camera
+SOONG_CONFIG_samsungCameraVars += extra_ids
+SOONG_CONFIG_samsungCameraVars_extra_ids := 52 # telephoto
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/samsung/r8q.config
 BOARD_NAME := SRPUB26A007
