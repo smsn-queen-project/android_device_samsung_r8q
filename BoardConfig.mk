@@ -8,3 +8,6 @@ include device/samsung/sm8250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/r8q
 
+# Kernel
+TARGET_KERNEL_CONFIG += vendor/samsung/r8q.config
+
