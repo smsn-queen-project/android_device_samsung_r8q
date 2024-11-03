@@ -233,3 +233,14 @@ on post-fs-data && property:ro.csc.sales_code=DSA
     umount /mnt/temp
     rmdir /mnt/temp
 
+on property:ro.boot.em.model=SM-G781B
+    setprop ro.boot.product.hardware.sku "s3fwrn5"
+    setprop ro.vendor.nfc.feature.chipname "SLSI"
+
+on property:ro.boot.em.model=SM-G7810
+    setprop ro.boot.product.hardware.sku "s3fwrn5"
+    setprop ro.vendor.nfc.feature.chipname "SLSI"
+
+on property:ro.boot.em.model=SM-G781N
+    setprop ro.boot.product.hardware.sku "s3fwrn5"
+    setprop ro.vendor.nfc.feature.chipname "SLSI"
