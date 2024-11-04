@@ -12,6 +12,9 @@ DEVICE_PATH := device/samsung/r8q
 SOONG_CONFIG_samsungCameraVars += extra_ids
 SOONG_CONFIG_samsungCameraVars_extra_ids := 52 # telephoto
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_samsung_r8q
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/samsung/r8q.config
 BOARD_NAME := SRPUB26A007
