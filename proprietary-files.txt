@@ -27,13 +27,13 @@ vendor/lib/libhdmipassthru.so
 vendor/lib/librecordalive.so
 
 # Camera
-vendor/lib64/K32QS_libTsAeFront.so
-vendor/lib64/K32QS_libTsAfFront.so
+vendor/lib64/K32QS_libTsAeFront.so;FIX_SONAME
+vendor/lib64/K32QS_libTsAfFront.so;FIX_SONAME
 vendor/lib64/K32QS_libTsAwbFront.so
-vendor/lib64/X12QS_libTsAe.so
-vendor/lib64/X12QS_libTsAf.so
+vendor/lib64/X12QS_libTsAe.so;FIX_SONAME
+vendor/lib64/X12QS_libTsAf.so;FIX_SONAME
 vendor/lib64/X12QS_libTsAwb.so
-vendor/lib64/X12QS_libTsPdafm.so
+vendor/lib64/X12QS_libTsPdafm.so;FIX_SONAME
 vendor/lib64/camera/com.qti.tuned.default.bin
 vendor/lib64/camera/com.samsung.sensor.s5k3l6.so
 vendor/lib64/camera/com.samsung.sensormodule.0_0_sony_imx555.bin
