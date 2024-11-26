@@ -16,7 +16,7 @@ function blob_fixup() {
             xxd -r -p "${2}".hex > "${2}"
             rm "${2}".hex
             ;;
-        vendor/lib64/unihal_main@2.1.so)
+        vendor/lib64/unihal_main@2.1.so|vendor/lib64/libscaler_hw.unifunc.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
