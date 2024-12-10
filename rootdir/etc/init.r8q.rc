@@ -172,7 +172,7 @@ on property:ro.boot.em.model=SM-G781N
     setprop bluetooth.device.default_name "Galaxy S20 FE 5G"
     setprop ro.telephony.default_network "33,33"
 
-on property:ro.boot.em.model=SM-G781B0
+on property:ro.boot.em.model=SM-G7810
     setprop bluetooth.device.default_name "Galaxy S20 FE 5G"
     setprop ro.telephony.default_network "33,33"
 
