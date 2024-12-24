@@ -274,4 +274,3 @@ vendor/etc/sensors/sns_reg_config
 
 # WiFi
 vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
